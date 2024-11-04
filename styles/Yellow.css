@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.line-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upLine {
+    width: 23vw;
+    height: 18px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+}
+
+.rouond {
+    width: 95px;
+    height: 95px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.whatsapp {
+    font-size: 54px;
+    margin: 55px 0 0 65px;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contect {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    margin-right: 181px;
+    align-items: start;
+
+}
+
+.container-contect h2 {
+    font: normal normal 900 66px/97px Heebo;
+    color: #FDBD03;
+}
+
+.container-contect p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #020253;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-control label {
+    font: normal normal bold 16px/24px Heebo;
+    color: #2C2C2C;
+    margin-top: 40px;
+}
+
+.form-control input {
+    width: 418px;
+    height: 50px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: #FFFFFF;
+    border-bottom: 4px solid #FDBD03;
+    margin-left: 19.5px;
+
+}
+
+#text {
+    height: 181px;
+    width: 854px;
+}
+
+.form-control input[type=submit] {
+    width: 166px;
+    height: 50px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #000000;
+    margin-top: 73px;
+}
+
+.container-img {
+    margin-right: 0;
+}
+
+.container-icons {
+    display: flex;
+    margin: 0 65px 38px 65px;
+    gap: 38px;
+}
+
+.facebook {
+    font-size: 36px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.instagram {
+    font-size: 34px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.linkedin {
+    font-size: 34px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.phone {
+    font-size: 34px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.bottomLine {
+    width: 54vw;
+    height: 18px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+}
+
+@media (min-width:1300px) and (max-width:1670px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+    }
+
+    .upLine {
+        height: 12px;
+    }
+
+    .rouond {
+        width: 55px;
+        height: 55px;
+
+    }
+
+    .whatsapp {
+        font-size: 38px;
+        margin: 33px 0 0 45px;
+    }
+
+
+    .container {
+        display: flex;
+        margin-top: 0;
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .container-contect {
+        margin-right: 20px;
+        padding: 30px;
+
+    }
+
+    .container-contect h2 {
+        font: normal normal 900 46px/67px Heebo;
+        color: #FDBD03;
+    }
+
+    .container-contect p {
+        font: normal normal normal 14px/20px Heebo;
+        color: #020253;
+    }
+
+    .form-control label {
+        font: normal normal bold 11px/16px Heebo;
+        color: #2C2C2C;
+        margin-top: 28px;
+    }
+
+    .form-control input {
+        width: 292px;
+        height: 35px;
+        margin-left: 13px;
+
+    }
+
+    #text {
+        height: 126px;
+        width: 597px;
+    }
+
+    .form-control input[type=submit] {
+        width: 116px;
+        height: 35px;
+        font: normal normal bold 15px/21px Heebo;
+        margin-top: 51px;
+    }
+
+    img {
+        width: 70%;
+        margin: 0 500px 0 126px;
+    }
+
+    .container-icons {
+        margin: 0 45px 12px 45px;
+        gap: 26px;
+        margin-top: auto;
+    }
+
+
+    .facebook {
+        font-size: 25px;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .instagram {
+        font-size: 23px;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .linkedin {
+        font-size: 23px;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .phone {
+        font-size: 23px;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .bottomLine {
+        height: 12px;
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        margin-top: auto;
+    }
+}
+
+
+@media (max-width:1300px) {
+    .upLine {
+        width: 86vw;
+
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        margin-top: 79px;
+    }
+
+    img {
+        width: 30%;
+        margin: 0 116px 0 126px;
+    }
+
+    .container-contect {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        margin-right: 25px;
+        align-items: center;
+
+    }
+
+    .rouond {
+        width: 45px;
+        height: 45px;
+
+    }
+
+    .container-contect h2 {
+        font: normal normal 900 40px/59px Heebo;
+    }
+
+    .container-contect p {
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    #form {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .form-control label {
+        font: normal normal bold 10px/14px Heebo;
+        margin-top: 15px;
+    }
+
+    .form-control input {
+        width: 309px;
+        height: 37px;
+
+    }
+
+    #text {
+        width: 309px;
+        height: 106px;
+    }
+
+    .form-control input[type=submit] {
+        width: 310px;
+        height: 37px;
+        font: normal normal bold 15px/21px Heebo;
+        letter-spacing: 0.23px;
+        margin-top: 17px;
+        margin-bottom: 145px;
+    }
+
+    .container-icons {
+        display: flex;
+        margin: 0 67px 26px 67px;
+        gap: 19px;
+    }
+
+    .facebook {
+        font-size: 17px;
+
+    }
+
+    .instagram {
+        font-size: 15px;
+
+    }
+
+    .linkedin {
+        font-size: 15px;
+
+    }
+
+    .phone {
+        font-size: 13px;
+
+    }
+
+    .bottomLine {
+        height: 12px;
+        background: #FDBD03 0% 0% no-repeat padding-box;
+    }
+
+    .bottomLine {
+        width: 100vw;
+    }
+}

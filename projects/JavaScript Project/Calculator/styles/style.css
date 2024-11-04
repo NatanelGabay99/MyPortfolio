@@ -1,0 +1,84 @@
+body {
+    background-image: url('../images/calculator.jpg');
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 30px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 25px;
+}
+
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.menu ,a {
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    background-color:rgb(206, 137, 9);
+}
+.menu:hover{
+    background-color: rgb(255, 183, 48);
+}
+a{
+    background: none;
+}
+
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.button-color {
+    background-color: rgb(244, 165, 16);
+}
+
+.button-color:hover {
+    background-color: rgb(255, 183, 48);
+}
+
+.button-color:active {
+    background-color: rgb(233, 192, 116);
+}

@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'item1 item2 item3 item3'
+        'item4 item5 item3 item3'
+        'item6 item7 item8 item9'
+        'item10 item10 item11 item12'
+        'item10 item10 item13 item14'
+        'item10 item10 item15 item16'
+    ;
+    padding: 1em;
+    gap: 1em;
+
+    margin: 1em;
+
+
+
+}
+
+img {
+    width: 100%;
+}
+
+/* .item{
+    width: 130px;
+    
+} */
+
+#item1 {
+    grid-area: item1;
+}
+
+#item2 {
+    grid-area: item2;
+}
+
+#item4 {
+    grid-area: item4;
+}
+
+#item5 {
+    grid-area: item5;
+}
+
+#item6 {
+    grid-area: item6;
+}
+
+#item7 {
+    grid-area: item7;
+}
+
+#item8 {
+    grid-area: item8;
+}
+
+#item9 {
+    grid-area: item9;
+}
+
+#item11 {
+    grid-area: item11;
+}
+
+#item12 {
+    grid-area: item12;
+}
+
+#item13 {
+    grid-area: item13;
+}
+
+#item14 {
+    grid-area: item14;
+}
+
+#item15 {
+    grid-area: item15;
+}
+
+#item16 {
+    grid-area: item16;
+}
+
+.container {
+    grid-area: item3;
+    background-color: #020253;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    font-size: 5rem;
+}
+
+.container p {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h1 {
+    color: #0EE1DA;
+    font: normal normal bold 61px/80px Assistant;
+    font-size: 85px;
+    text-align: center;
+
+}
+
+p {
+    font: normal normal normal 10px/26px Assistant;
+    color: #F9F9F9;
+}
+
+
+.container2 {
+    grid-area: item10;
+    background-color: #8E097C;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.container2 h1 {
+    font-size: 5rem;
+    margin-top: 200px;
+}
+
+.container2 p {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 50px;
+}
+
+.h1 {
+    color: #FFFFFF;
+    font: normal normal bold 61px/80px Assistant;
+    font-size: 61px;
+}
+
+.contact {
+    font: normal normal bold 23px/24px Heebo;
+    color: #0EE1DA;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+
+input[type=text] {
+
+    width: 100%;
+    height: 7vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 8px solid #0EE1DA;
+}
+
+textarea {
+
+    width: 100%;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 8px solid #0EE1DA;
+}
+
+label {
+    padding: 0 0 10px;
+}
+
+/* 
+form {
+    margin: 2em;
+    padding: 180px 0 0;
+} */
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+
+#button {
+    top: 1874px;
+    left: 393px;
+    width: 100%;
+    height: 7vh;
+    font: normal normal bold 35px/33px Heebo;
+    background-color: #0EE1DA;
+    border: none;
+    color: #011560;
+    text-align: center;
+    margin: 50px 0 0 0;
+    justify-content: center;
+    padding: 25px 0 0 0;
+}
+
+
+
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-areas:
+            'item3 item3'
+            'item3 item3'
+            'item1 item2'
+            'item4 item5'
+            'item6 item7'
+            'item8 item9'
+            'item10 item10'
+            'item10 item10'
+            'item10 item10'
+            'item11 item12'
+            'item13 item14'
+            'item15 item16';
+        background: #E5EEFF;
+    }
+
+
+    .item {
+        height: auto;
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    #item3 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #item10 {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .container h1 {
+        text-align: center;
+        font: normal normal bold 80px/87px Assistant;
+        letter-spacing: 1px;
+    }
+
+    .container p {
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #F9F9F9;
+        letter-spacing: 0px;
+    }
+
+    /* .container2 {} */
+
+    .container2 h1 {
+        font-size: 3.7em;
+        margin-top: 75px;
+    }
+
+    .container2 p {
+        font-weight: 30px;
+    }
+
+    form {
+        margin-bottom: 120px;
+    }
+
+    #button {
+        margin-top: 30px;
+    }
+}

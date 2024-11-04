@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url(./images/pink\ floyd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#container-contect {
+    background: #1A1A1AD4 0% 0% no-repeat padding-box;
+    width: 569px;
+    height: 643px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+    justify-content: center;
+    margin-right: 295px;
+    align-items: center;
+    margin-top: 157px;
+    text-align: right;
+    padding: 40px 50px;
+}
+
+#container-contect h2 {
+    font: normal normal 900 36px/53px Heebo;
+    color: #fff;
+}
+
+#container-contect p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #F9F9F9;
+
+}
+
+.form {
+    margin-top: 15px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    text-align: right;
+}
+
+.form-control label {
+    font: normal normal bold 16px/24px Heebo;
+    color: #FFFFFF;
+}
+
+.form-control input {
+    width: 418px;
+    height: 50px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+}
+
+.form-control input[type=submit] {
+    width: 166px;
+    height: 50px;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    color: azure;
+    font: normal normal bold 22px/30px Heebo;
+    margin-top: 30px;
+}
+
+@media (min-width:700px) and (max-width:1670px) {
+
+    body {
+        background-size: 100vw 55vh;
+
+    }
+
+   
+
+    #container-contect {
+        width: 400px;
+        height: 490px;
+        margin-right: 200px;
+    }
+
+    #container-contect h2 {
+        font: normal normal 900 26px/45px Heebo;
+    }
+
+    #container-contect p {
+        font: normal normal normal 15px/24px Heebo;
+    }
+
+    .form-control input {
+        width: 280px;
+        height: 35px;
+
+    }
+
+    .form-control input[type=submit] {
+        width: 150px;
+        height: 35px;
+        margin-bottom: 50px;
+
+
+
+    }
+}
+
+@media (min-width:250px) and (max-width:700px) {
+
+    body {
+        background-size: 100vw 30vh;
+
+
+    }
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-contect {
+        width: 299px;
+        height: 441px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    #container-contect h2 {
+        font: normal normal 900 28px/45px Heebo;
+    }
+
+    #container-contect p {
+        font: normal normal normal 15px/24px Heebo;
+    }
+
+    .form-control input {
+        width: 230px;
+        height: 28px;
+
+    }
+
+    .form-control input[type=submit] {
+        width: 76px;
+        height: 33px;
+
+
+    }
+}

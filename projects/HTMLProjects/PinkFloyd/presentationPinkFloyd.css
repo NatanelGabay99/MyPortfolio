@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #d3d9de;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    padding: 20px 10%;
+    background-color: #1d262d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+
+}
+
+.navbar a:hover {
+    background-color: #555;
+    color: #9ac0dd;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #a2cefa;
+}
+
+.logo {
+    position: relative;
+    font-family: 'Brygada 1918', serif;
+    font-size: 40px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d262d;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+/* Body styles */
+.body-content {
+    width: 100vw;
+    height: 20vh;
+    background: #1d262d;
+    color: #9ac0dd;
+    text-align: center;
+    padding: 50px 0 20px;
+}
+
+.body-content h1 {
+    font-size: 3em;
+    color: rgb(225, 83, 107)
+}
+
+.body-content h3 {
+    color: #ededed;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+
+.body-image {
+    width: 50%;
+    height: auto;
+    margin: 115px 0 0 0;
+    /* originally margin: 170px 0 0 0 (if needed to bring back)*/
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px lightblue;
+    transition: .8s;
+
+}
+
+.body-image:hover {
+    width: 60%;
+    transition: .6s;
+}
+
+.btn-box {
+    margin-left: 630px;
+    margin-top: 70px;
+
+    /* originally 
+    margin-left: 820px
+    margin-top: 110px 
+    (if needed to bring back) */ 
+}
+
+
+.btn-box a {
+    width: 6em;
+    padding: 7px 15px;
+    margin-left: 10px;
+    background: #a2cefa;
+    border: 2px solid #a2cefa;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #1d262d;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    background: #1d262d;
+    color: #d3d9de;
+}
+
+
+
+footer {
+  background-color: #1d262d;
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 3rem;
+  justify-content: space-between;
+}
+
+p{
+ margin-bottom: 1rem;
+ margin-top: -10px;
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+    header {
+      position: fixed;
+      top: 6px;
+      left: 0;
+      width: 100%;
+      height: 2vh;
+      padding: 20px 10% 42px;
+      background-color: #1d262d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+  
+    .body-content h1 {
+      color: rgb(225, 83, 107);
+      font-size: 3rem;
+      position: relative;
+      top: 3px;
+      right: 6rem;
+  }
+    .body-content h3 {
+      color: #ededed;
+      font-size: 16px;
+      margin-right: 13rem;
+      margin-top: -5.8px;
+  }
+    .btn-box a {
+      padding: 4px 17px;
+      margin-left: -26rem;
+      margin-right: 11rem;
+      background: #a2cefa;
+      border: 2px solid #a2cefa;
+      border-radius: 15px;
+      font-size: 16px;
+      color: #1d262d;
+      text-decoration: none;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      align-content: center;
+      align-items: center;
+      margin-top: -1rem;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      right: 10rem;
+      bottom: 0rem;
+    }
+  
+    .body-image {
+      width: 64%;
+      height: auto;
+      margin: 6rem 13rem 0 0;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px rgb(41, 42, 43);
+      transition: 0.8s;
+    }
+  
+    .body-content {
+      width: 150vw;
+      height: 18vh;
+      background: #1d262d;
+      color: #9ac0dd;
+      text-align: center;
+      padding: 50px 0 20px;
+    }
+    .logo {
+      position: relative;
+      right: 3rem;
+      bottom: 0.5rem;
+      font-family: "Brygada 1918", serif;
+      font-size: 25px;
+      color: #ededed;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .navbar a {
+      font-size: 17px;
+      color: #fff;
+      text-decoration: none;
+      padding: 4px 1px;
+      margin: 0px 4px;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn-box {
+      margin-left: 629px;
+      margin-top: 56px;
+    }
+  
+    footer {
+      background-color: #1d262d;
+      color: #fff;
+      text-align: center;
+      padding: 7px 0;
+      position: fixed;
+      right: 7rem;
+      bottom: -31px;
+      width: 100%;
+      height: 36rem;
+      justify-content: space-between;
+    }
+  
+    p {
+      margin-bottom: 1rem;
+      margin-top: 0px;
+    }
+  }

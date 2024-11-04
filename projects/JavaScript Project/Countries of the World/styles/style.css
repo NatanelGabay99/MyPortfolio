@@ -1,0 +1,62 @@
+.card-img-top {
+    height: 35%;
+    object-fit: cover;
+}
+
+.fa:hover {
+    cursor: pointer;
+}
+
+.container {
+    margin: 3rem;
+}
+
+.card {
+    height: 35vh;
+}
+
+.button {
+    margin-left: 50%;
+    position: relative;
+    right: 25%;
+    bottom: 69px;
+    width: 10%;
+    border-radius: 5px;
+    box-shadow: 5px 2px rgb(31, 75, 218);
+    background-color: #a2a4a8;
+    color: whitesmoke;
+    border: none;
+}
+a{
+    color: whitesmoke;
+}
+
+.button:hover {
+    background-color: rgb(183, 175, 175);
+}
+
+  .button ,a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.img {
+    position: relative;
+    top: 65px;
+    left: 61rem;
+}
+ 
+
+@media (max-width: 768px){
+    .button{
+        width: 40%;
+        right: 20%;
+        bottom: 12px;
+    }
+
+    .img {
+        position: relative;
+        left: 18rem;
+        top: 7rem;
+    }
+}
