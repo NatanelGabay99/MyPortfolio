@@ -727,7 +727,7 @@ i.fa.fa-bars {
   background: #1d262d;
 }
 
-@media (min-width: 430px) and (max-width: 768px) {
+@media (min-width: 430px) and (max-width: 768px) { /* fully responsive for iPhone 14 pro max*/
   .navbar {
     display: none;
   }
