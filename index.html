@@ -207,27 +207,27 @@
     <section id="contact">
         <div class="container mt-7">
             <h2>Contact <span style="color: #a2cefa;">Me</span></h2>
-            <form>
+            <form action="https://formspree.io/f/mvgordnk" method="POST">
                 <div class="mb-3">
-                    <label for="name" class="form-label"> Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email address" required>
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Enter phone number" required>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter phone number" required>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="2" placeholder="Write your message here"
-                        required></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="2" placeholder="Write your message here" required></textarea>
                 </div>
-                <input type="submit" class="btn btn-primary">
+                <input type="submit" class="btn btn-primary" value="Submit">
             </form>
         </div>
+        
         <div class="contact-icons">
 
             <div class="icons">
