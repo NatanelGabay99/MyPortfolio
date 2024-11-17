@@ -165,7 +165,7 @@ p{
  margin-top: -10px;
 }
 
-@media (min-width: 430px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   header {
     position: fixed;
     top: 6px;
